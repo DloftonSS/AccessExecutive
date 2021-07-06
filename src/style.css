@@ -1,0 +1,79 @@
+/* NavBar Styling */
+
+body {
+  background-color: #d1d1d1;
+  box-sizing: border-box;
+}
+.ui.menu:first-child {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Jumbotron/Message styling */
+.ui.message.message-container {
+  text-align: left;
+  padding: 50px;
+  box-shadow: 0;
+  margin: 0;
+}
+.ui.action.left.icon.input {
+  float: right;
+}
+/* UserForm styling */
+.form-container {
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+/* UserForm alert message */
+.ui.alertMssg {
+  margin-top: 0;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.ui.card {
+  margin: 0;
+  box-shadow: 0px 5px 5px grey;
+}
+
+.ui.datagrid.row {
+  box-shadow: -5px 5px 5px grey;
+}
+
+.negative {
+  background-color: red;
+}
+
+.approaching {
+  background-color: yellow;
+}
+
+.bg-dark {
+  background-color: black !important;
+}
+
+@import url("https://fonts.googleapis.com/css?family=pirata+one");
+@import url("https://fonts.googleapis.com/css?family=gruppo");
+
+.MuiPickersToolbar-toolbar {
+  background-color: red !important;
+}
+.MuiPickersDay-daySelected {
+  background-color: red !important;
+}
+.MuiButton-textPrimary {
+  color: red !important;
+}
+.MuiPickersClockPointer-pointer {
+  background-color: red !important;
+}
+.MuiPickersClockPointer-thumb {
+  border: 14px solid red !important;
+}
+.MuiPickersClock-pin {
+  background-color: red !important;
+}
+.MuiPickersClockPointer-noPoint {
+  background-color: red !important;
+}

@@ -1,0 +1,11 @@
+.Hey {
+  display: black;
+  margin-left: 15%;
+  text-align: left;
+  width: 40%;
+
+  border-bottom: rgb(255, 0, 0) solid medium;
+  color: white;
+  font-weight: 900;
+  font-size: 4rem;
+}

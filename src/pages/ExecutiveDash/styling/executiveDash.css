@@ -1,0 +1,309 @@
+.execMobile {
+  display: none;
+  /* animation-name: MoveUpDown; */
+  animation-name: fadeOut;
+  animation: mover 8s;
+  animation-fill-mode: forwards;
+  padding-top: 5%;
+}
+
+.execDesktop {
+  display: none;
+}
+
+.about {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  background-color: rgb(182, 182, 182);
+}
+
+.benifitBlock {
+  background-color: black;
+  margin: 3px;
+  color: white;
+  width: 150px;
+  height: 100px;
+}
+h1 {
+  text-align: left;
+  display: block;
+  /* margin-left: auto;
+  margin-right: auto; */
+  width: 40%;
+  border-bottom: rgb(255, 0, 0) solid medium;
+
+  font-weight: 900;
+  font-size: 4rem;
+}
+.Questions {
+  text-align: center;
+  bottom: 50px;
+}
+.address {
+  text-align: center;
+  font-size: 10px;
+}
+h2:after {
+  /* border-bottom: rgb(255, 0, 0) solid medium; */
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  /* This will center the border. */
+  width: 10%; /* Change this to whatever width you want. */
+  padding-top: 20px; /* This creates some space between the element and the border. */
+  border-bottom: 1px solid red;
+}
+
+.serviceBoxes {
+  background-color: #1b1b1b;
+  margin-right: 1rem;
+  width: 1000px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+}
+.serviceBoxRows {
+  padding: 1rem;
+  align-items: baseline;
+}
+.evilBeardImage {
+  display: block;
+  margin-left: 10%;
+  animation: fade 10s infinite;
+}
+@keyframes fade {
+  100%,
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  100%,
+  50% {
+    opacity: 0;
+  }
+  0% {
+    opacity: 1;
+  }
+}
+@-keyframes fadeIn {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: 0;
+  }
+
+  50% {
+    bottom: 100px;
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-250px);
+  }
+}
+@keyframes movedown {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(250px);
+  }
+}
+.coolgun {
+  display: block;
+  margin-left: 6%;
+  /* animation-name: MoveUpDown;
+  animation-name: fadeOut;
+  animation: mover 10s;
+  animation-duration: 10s;
+  animation-fill-mode: forwards; */
+  top: 2%;
+  margin-top: 10%;
+  /* position: absolute; */
+  left: 0;
+  bottom: 0;
+}
+.headGraph {
+  text-align: left;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+P {
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.links {
+  color: red;
+  text-decoration: none;
+}
+.benefitsBoxes {
+  background-color: #1b1b1b;
+  margin-right: 1rem;
+  width: 1000px;
+  height: 50px;
+  text-align: center;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+}
+
+div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  width: 100vw;
+  height: 300px;
+  position: relative;
+  left: calc(-50vw + 50%);
+  margin-right: -50vw;
+  display: flex;
+}
+.scrollingImages {
+  width: 100vw;
+  height: 300px;
+}
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  width: 500px;
+}
+.testing {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.testing2 {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  align-items: center;
+  /* align-content: space-around; */
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
+
+.mobileHeader {
+  display: black;
+  margin-left: 15%;
+  text-align: left;
+  width: 40%;
+  top: 5%;
+  border-bottom: rgb(255, 0, 0) solid medium;
+
+  font-weight: 900;
+  font-size: 4rem;
+}
+
+footer {
+  position: sticky;
+  animation: movedown 8s;
+  animation-fill-mode: forwards;
+  padding-top: 5%;
+}
+
+@media only screen and (max-width: 415px) {
+  .execMobile {
+    display: block;
+    background-color: black;
+    height: 100%;
+    color: white;
+    margin-left: -10px;
+    top: 5%;
+  }
+  .execDesktop {
+    display: none;
+  }
+  /* .benefitsBoxes {
+    background-color: #1b1b1b;
+    margin-right: 1rem;
+    width: 1000px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+  } */
+  .benefitsBoxes {
+    background-color: #1b1b1b;
+    margin-left: 5%;
+    text-align: center;
+    /* padding-top: 15px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+  }
+  .benefitsBoxesMargin {
+    margin-left: 5%;
+  }
+  .positioningTop {
+    /* margin-top: 10%; */
+  }
+  .positioningBottom {
+    margin-bottom: 10%;
+  }
+
+  @-keyframes fadeOut {
+    0% {
+      opacity: 1;
+      visibility: visible;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  .mobileHeader {
+    animation-name: fadeOut;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+}
+
+@media only screen and (min-width: 415px) {
+  .execDesktop {
+    display: block;
+  }
+  .execMobile {
+    display: none;
+  }
+}
